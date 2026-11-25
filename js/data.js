@@ -1,7 +1,7 @@
 window.FIHRIST_SEED = {
   "format": "fihrist/5",
-  "revision": 10,
-  "updated": "2026-11-23",
+  "revision": 11,
+  "updated": "2026-11-25",
   "groups": [
     { "id": "core", "ar": "الأساسية", "en": "Core", "icon": "layers" },
     { "id": "tools", "ar": "الأدوات", "en": "Tools", "icon": "calc" },
@@ -176,6 +176,9 @@ window.FIHRIST_SEED = {
     { "id": "gitlink", "group": "experimental", "pigment": "indigo", "url": "https://gitlink-gilt.vercel.app/",
       "ar": "إحصائيات جيتهب", "en": "GitLink", "dar": "متابعين وزوار وإحصائيات جيتهب", "den": "GitHub followers, viewers and profile stats",
       "aliases": ["gitlink", "github", "jithub", "followers", "جيتهب"] },
+    { "id": "store", "group": "experimental", "pigment": "tyrian", "url": "https://static-store-fr76.vercel.app/#/polars-desktop-demo", "since": "2026-11-24",
+      "ar": "المتجر", "en": "Store", "dar": "تنزيل التطبيقات بكل إصداراتها", "den": "App downloads, every version",
+      "aliases": ["store", "shelf", "downloads", "releases", "versions", "polars", "polars desktop", "matgar", "tanzeel", "متجر", "تنزيل", "تنزيلات", "إصدارات"] },
 
     { "id": "paper", "group": "print", "pigment": "bone", "url": "https://el-messiry.netlify.app/",
       "ar": "ورقة", "en": "Paper", "dar": "جزء من أدوات الطباعة", "den": "Part of the print toolset",
