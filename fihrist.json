@@ -1,8 +1,8 @@
 {
   "$schema": "./fihrist.schema.json",
   "format": "fihrist/5",
-  "revision": 11,
-  "updated": "2026-11-25",
+  "revision": 12,
+  "updated": "2026-11-27",
   "groups": [
     { "id": "core", "ar": "الأساسية", "en": "Core", "icon": "layers" },
     { "id": "tools", "ar": "الأدوات", "en": "Tools", "icon": "calc" },
@@ -50,9 +50,13 @@
     { "id": "index-builder", "group": "core", "pigment": "indigo", "url": "https://lx-index.vercel.app/", "since": "2026-08-11",
       "ar": "فهرس الأدوية", "en": "Index Builder", "dar": "بناء فهرس الأدوية", "den": "Builds the drug index",
       "aliases": ["fehres el-adwia", "drug index", "fahras"] },
-    { "id": "dafter", "group": "core", "pigment": "lapis", "url": "https://daftar-psi-two.vercel.app/", "since": "2026-08-11",
+    { "id": "dafter", "group": "core", "pigment": "lapis", "since": "2026-08-11",
       "ar": "دفتر الحركة", "en": "Dafter", "dar": "تسجيل المنصرف الشهري للصيدلية", "den": "Monthly movement ledger",
-      "aliases": ["daftar el-haraka", "daftar", "movement"] },
+      "aliases": ["daftar el-haraka", "daftar", "movement"], "def": 0,
+      "variants": [
+        { "id": "main", "ar": "الرئيسي", "en": "Main", "url": "https://daftar-psi-two.vercel.app/" },
+        { "id": "alt", "ar": "بديل", "en": "Alt", "dar": "دفتر أدوية بجدول للطباعة والتصدير إلى xlsx", "den": "Drug ledger with print and xlsx export", "aliases": ["materia", "diwan", "dewan", "drug ledger", "materia medica", "ديوان", "دفتر الأدوية", "سجل الأدوية", "ماتيريا"], "url": "https://meterial-tau.vercel.app/" }
+      ] },
 
     { "id": "id-dates", "group": "tools", "pigment": "lapis", "since": "2026-10-09",
       "ar": "أدوات الأرقام", "en": "Number Tools", "dar": "الرقم القومي والتواريخ وجهات الاتصال", "den": "National ID, dates and contacts",
@@ -153,8 +157,7 @@
       "aliases": ["adawat saydaliya", "pharmacy tools", "صيدلية"], "def": 0,
       "variants": [
         { "id": "pillbug", "ar": "إدارة القوائم", "en": "Pillbug", "aliases": ["pillbugs", "lists", "edarat qawaem", "قوائم"], "url": "https://pillbug.vercel.app/" },
-        { "id": "bugvert", "ar": "محول الوحدة", "en": "Bugvert", "aliases": ["converter", "unit converter", "price converter", "mohawel", "mohawel wahda", "محول", "وحدة", "وحدات"], "url": "https://bugvert.vercel.app/" },
-        { "id": "materia", "ar": "ديوان", "en": "Materia", "dar": "دفتر أدوية بجدول للطباعة والتصدير إلى xlsx", "den": "Drug ledger with print and xlsx export", "aliases": ["materia", "diwan", "dewan", "drug ledger", "materia medica", "ديوان", "دفتر الأدوية", "سجل الأدوية", "ماتيريا"], "url": "https://meterial-tau.vercel.app/" }
+        { "id": "bugvert", "ar": "محول الوحدة", "en": "Bugvert", "aliases": ["converter", "unit converter", "price converter", "mohawel", "mohawel wahda", "محول", "وحدة", "وحدات"], "url": "https://bugvert.vercel.app/" }
       ] },
     { "id": "prep", "group": "experimental", "pigment": "verdigris", "since": "2026-09-18",
       "ar": "تجهيز البيانات", "en": "Data Prep", "dar": "تجهيز البيانات وتنقيتها", "den": "Prepare and sift datasets",
